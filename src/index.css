@@ -5,9 +5,28 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden; 
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.canvas {
+  border: 1px solid #222;
+  width: 40%;
+  height: 100vh;
+}
+
+@media (max-width: 900px) {
+  .canvas {
+    width: 60%;
+  }
+}
+
+@media (max-width: 600px) {
+  .canvas {
+    width: 100%;
+  }
 }
